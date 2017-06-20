@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+</head>
+
+
+
+<h1>Vehicle List</h1>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+
+        <th>Vin</th>
+        <th>make</th>
+        <th>model</th>
+        <th>year</th>
+        <th>redlineRpm</th>
+        <th>maxFuelVolume</th>
+        <th>lastServiceDate</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="Vehicle in carVm.Vehicles">
+
+        <td>{{Vehicle.vin}}</td>
+        <td>{{Vehicle.make}}</td>
+        <td>{{Vehicle.model}}</td>
+        <td>{{Vehicle.year}}</td>
+        <td>{{Vehicle.redlineRpm}}</td>
+        <td>{{Vehicle.maxFuelVolume}}</td>
+        <td>{{Vehicle.lastServiceDate}}</td>
+
+    </tr>
+    </tbody>
+</table>
+</html>
